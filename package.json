@@ -1,0 +1,19 @@
+{
+  "name": "codemirror",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server:dev": "cd server && npm run start:dev && cd ..",
+    "client:dev": "cd client && npm start && cd ..",
+    "build": "rm -rf build && npm run build:server && npm run build:client && npm run move:server:client",
+    "install": "cd client && npm install && cd .. && cd server && npm install && cd ..",
+    "build:server": "cd server && npm run build && cd ..",
+    "build:client": "cd client && npm run build && cd ..",
+    "move:server": "mv ./server/build . && cp ./server/package.json ./build && cd build && npm install && cd ..",
+    "move:server:client": "npm run move:server && mv ./client/build ./build && cd build && mv ./build client && cd .."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
