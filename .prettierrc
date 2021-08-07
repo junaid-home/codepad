@@ -1,10 +1,10 @@
 {
   "arrowParens": "avoid",
-  "bracketSpacing": false,
+  "bracketSpacing": true,
   "htmlWhitespaceSensitivity": "css",
   "insertPragma": false,
   "jsxBracketSameLine": false,
-  "jsxSingleQuote": false,
+  "jsxSingleQuote": true,
   "printWidth": 90,
   "proseWrap": "always",
   "quoteProps": "as-needed",
